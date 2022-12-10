@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href= "./assets/style.css"/>
+  <title>JavaScript Quiz</title>
+</head>
+
+<body>
+  <header>
+    <button class="buttons" id="check-high-scores">High Scores</button>
+    <h1 class="time" style="text-align:center;">You Have 15 Seconds Peasant</h1>
+  </header>
+
+  <section class="main-page">
+    <div></div>
+    <div id="sub-main">
+      <button class= "buttons" id="start-button">Start Quiz</button>
+    </div> 
+  </section>
+
+  <section class="quiz-page">
+    <div class="question">
+      <h2 id="ask-question"></h2>
+      <ul>
+       <li><button class="answer" id ="Q1" value="a">Property is Inherently Violent</button></li>
+       <li><button class="answer" id ="Q2" value="b">Taxation is Theft</button></li>
+       <li><button class="answer" id ="Q3" value="c">We Must Seize the Means of Production and Spill the Blood of the Deceivers</button></li>
+     </ul>
+    </div> 
+    <div id="answer-check"></div>
+  </section>
+
+  <section class="results" id="results">
+    <div id="final-score"></div>
+    <form>
+      <label for="initials">Initials:</label><br>
+      <input type="text" id="initials"><br>
+    </form>
+      <button class="buttons" id="save-score">Save Results</button>
+  </section>
+
+    <section class="high-score-page">
+      <div>
+      <h1>High Scores</h1>
+      <div id="score-data"></div>
+      <button id="home">Go Home</button>
+      <button id="clear-score">Clear High Score</button>
+      </div>
+    </section>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

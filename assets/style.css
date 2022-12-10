@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;   
+    padding: 0;
+    margin: 0;
+   }
+   
+   body{
+       background-color: maroon; 
+   }
+   
+   header {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       background-color: black;
+       height:max-content;
+       color: red;
+       padding: 50px;
+       margin: 15px;
+       border: 15 px;
+   }
+
+   h1{
+    padding: 50px;
+    margin: 15px;
+    border: 15px;
+   }
+
+   .buttons{
+    border-radius: 5px;
+    background-color: lightblue;
+
+   }
+   .answer{
+    background-color:aqua;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+   .quiz-page{
+    background-color: aqua;
+   }
+
+   .quiz-page, .high-score-page, .results{ 
+    display:none;
+   }
+
