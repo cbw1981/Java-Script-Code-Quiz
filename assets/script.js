@@ -61,14 +61,14 @@ function genQuiz(){
 function countdown(){
   if (secondsLeft <1){
     clearInterval(intervalID)
-    timeLeft.textContent="You're off the case...turn in your gun and badge. Refresh the page and start over "
- 
+    timeLeft.textContent="You're off the case...turn in your gun and badge."
+   setTimeout(endGame, 3000);
     
   } else{
     secondsLeft=secondsLeft -1
     console.log(secondsLeft)
     //You Have 15 Seconds Peasant
-   timeLeft.textContent="you have " + secondsLeft + " seconds left peasant"
+   timeLeft.textContent="you have " + secondsLeft + " seconds left"
   }
   
 };
