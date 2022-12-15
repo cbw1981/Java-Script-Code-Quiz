@@ -28,27 +28,27 @@ var questionCount=1;
 var intervalID;
 
 
-
+//need an array of questions
 var questions=[
 {
-  question: "what is this?",
-  answers: ["a: that", "b: those", "c: these"],
+  question: "commonly used data types DO NOT include:",
+  answers: ["a: strings", "b: alerts", "c: booleans"],
+  correctAnswer: "b"
+},
+{
+  question: "a very useful tool used during developement and debugging for printing content to the debugger is:",
+  answers: ["a: console.log", "b: for loops", "c: terminal/bash"],
   correctAnswer: "a"
 },
 {
-  question: "what is this?",
-  answers: ["a: that", "b: those", "c: these"],
-  correctAnswer: "a"
-},
-{
-  question: "what is this?",
-  answers: ["a: that", "b: those", "c: these"],
-  correctAnswer: "a"
+  question: "Which of the following is a statement that can be used to terminate a loop, switch, or label statement?",
+  answers: ["a: stop", "b: halt", "c: break"],
+  correctAnswer: "c"
 },
 ];
 
 
-
+//need a function to start the quiz
 function genQuiz(){
   mainPage.style.display="none";
   quizPage.style.display="block";
@@ -57,6 +57,7 @@ function genQuiz(){
   showQuestion(questionNumber);
 };
 
+//need a function to start a timer and setInterval
 function countdown(){
   if (secondsLeft <1){
     clearInterval(intervalID)
@@ -75,6 +76,7 @@ function countdown(){
 function startTimer(){ 
   intervalID=setInterval(countdown, 1000)
 };
+
 //display questions
 function showQuestion (n) {
   askQuestion.textContent = questions[n].question;
@@ -120,7 +122,7 @@ function endGame() {
   timeLeft.style.display = "none"; 
 };
 
-//a function to go home
+//need a function to go home
 function journeyHome(){
   mainPage.style.display ="block";
   results.style.display ="none";
@@ -132,12 +134,12 @@ function getScore() {
   var currentList=localStorage.getItem("ScoreList");
   if(currentList !== null){
     freshList = JSON.parse(currentList);
-    return freshList;
+     return freshList;
   } else{
     freshList = [];
   }
   return freshList;
-};
+ };
 
 function addItem (n){
   var addedList =getScore();

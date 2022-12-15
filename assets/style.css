@@ -32,13 +32,15 @@
 
    }
    .answer{
-    background-color:aqua;
-    color: red;
+    background-color:maroon;
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+    font-size: 32px;
    }
 
    .quiz-page{
-    background-color: aqua;
+    background-color: maroon;
    }
 
    .quiz-page, .high-score-page, .results{ 
